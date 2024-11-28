@@ -1,5 +1,5 @@
 import BlogCard from "../components/BlogCard"
-import Appbar from "../components/Appbar"
+import Appbar from "../components/Appbar.tsx"
 import { useBlogs } from "../hooks"
 import SkeletonBlogCard from "../components/Skeleton/SkeletonBlogs"
 

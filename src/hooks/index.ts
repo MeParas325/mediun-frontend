@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { BACKEND_URL } from "../utilities/constants"
+import { BACKEND_URL } from "../utilities/constants.ts"
 
 interface Blog {
     id: string,

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Appbar from "../components/Appbar"
-import {BACKEND_URL} from "../utilities/constants"
+import Appbar from "../components/Appbar.tsx"
+import {BACKEND_URL} from "../utilities/constants.ts"
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Publish = () => {
     
 
     try {
-        await axios.post(`http://localhost:8787/api/v1/blog`, {title, content}, {
+        await axios.post(`${BACKEND_URL}api/v1/blog`, {title, content}, {
           headers: {
             'Authorization': localStorage.getItem("token")
           }
@@ -45,7 +45,7 @@ const Publish = () => {
           onChange={(e) => setContent(e.target.value)}
           placeholder="Tell your story..."
           className="w-full text-gray-600 placeholder-gray-400 outline-none border border-gray-300 rounded-md p-3 mb-4 focus:ring-2 focus:ring-black resize-none"
-          rows="5"
+          rows={5}
         ></textarea>
 
         {/* Publish Button */}

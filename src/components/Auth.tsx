@@ -3,7 +3,7 @@ import LabelledInput from "./LabelledInput"
 import { SignupInput } from "@paras325/mediun-common"
 import { Link, useNavigate } from "react-router-dom"
 import axios from "axios"
-import { BACKEND_URL } from "../utilities/constants"
+import { BACKEND_URL } from "../utilities/constants.ts"
 
 const Auth = ({type}: {type: "signup" | "signin"}) => {
 
