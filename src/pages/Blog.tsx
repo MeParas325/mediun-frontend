@@ -1,6 +1,6 @@
 import { useBlog } from "../hooks"
 import { useParams } from "react-router-dom"
-import Appbar from "../components/Appbar"
+import Appbar from "../components/Appbar.tsx"
 
 // Shimmer Component for Blog Page
 const ShimmerBlog = () => {
